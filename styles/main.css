@@ -1,0 +1,881 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: mr-eaves-modern, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    body nav ul{
+      font-size: 15px;
+    }
+
+    body .talhaKhanHeader{
+      font-size: 20px;
+    }
+
+    body .testboxContainer{
+      padding: 0;
+      width: 100%;
+    }
+
+    body .testbox{
+      margin-right: 0;
+    }
+}
+
+/*
+@media screen and (max-width: 480px)
+{
+  vertical-align: top;
+  margin: 0;
+}
+*/
+
+.backgroundTest{
+  background-image: url(images/yearbookcoverupdated.png);
+
+}
+
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+
+}
+
+body{
+  /*background: white;*/
+  animation: fadeIn 1s;
+  margin: 0;
+}
+
+body.fade-out{
+  opacity: 0;
+  transition: none;
+}
+
+.backButtonSource{
+  position: relative;
+  font-size: 50%;
+}
+
+.homeContainer{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  top: 40%;
+}
+
+nav ul{
+  position: relative;
+  margin: 0 auto;
+  margin-top: 1vh;
+  font-size: 3.2vh;
+  width: 72vw;
+  padding-top: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 2vh;
+  transition-property: font-size;
+  transition-duration: 0.25s;
+}
+
+nav ul li:hover{
+  font-size: 115%;
+  transition-timing-function: ease-out;
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+/* Headers*/
+
+.talhaKhanHeader{
+  position: relative;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5.5vh;
+  letter-spacing: 20px;
+  margin-left: 20px;
+  padding: 0;
+  color: black;
+  display: inline-block;
+}
+
+.aboutMeBody{
+  width: 100%;
+}
+
+
+.testboxContainer{
+  /*display: flex;
+  justify-content: center;*/ 
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.testbox{
+  background-color: #DAE9E4;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-right: 20px;
+  margin-bottom: 4vh;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+  box-shadow: 4px 4px 2px gray;
+  /*float: left;*/
+}
+
+.testbox2{
+  background-color:#ECC7C0;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-right: 20px;
+  margin-bottom: 4vh;
+  vertical-align: top;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 4px 4px 2px gray;
+  /*float: left;*/
+}
+
+.testboximage{
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.testbox3{
+  background-color: #FFE1BB;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-right: 20px;
+  margin-bottom: 4vh;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 4px 4px 10px gray;
+  /*float: left;*/
+}
+
+.testbox4{
+  background-color: #e2e5ce;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  margin-right: 20px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 4px 4px 2px gray;
+  /*float: left;*/
+}
+
+.testbox5{
+  background-color: #DAFFD8;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  margin-right: 20px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 4px 4px 10px gray;
+  /*float: left;*/
+}
+
+.testbox6{
+  background-color: #D8FFFD;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-right: 20px;
+  margin-bottom: 4vh;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 4px 4px 10px gray;
+  /*float: left;*/
+}
+
+.testbox7{
+  background-color: #FFD8D8;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  margin-right: 20px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 4px 4px 2px gray;
+  /*float: left;*/
+}
+
+.testbox8{
+  background-color: #DBE5FC;
+  width: 500px;
+  height: 500px;
+  /*
+  margin-left: 2vh;
+  margin-right: 3vh;
+  */
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  margin-right: 20px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: 4px 4px 2px gray;
+  /*float: left;*/
+}
+
+.aboutMeHeader{
+
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  color: black;
+  text-align: center;
+  font-size: 400%;
+}
+
+.MyNameIs{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 600%;
+  color: black;
+  padding: 10px;
+  padding-top: 29%;
+  text-align: center;
+  display: block;
+}
+
+.aboutMeText{
+  /*font-weight: 400;
+  color: black;
+  width: 60%;
+  font-size: 35px;
+  display: block;
+  text-align: center;
+  padding-top: 5vh;
+  */
+  position: relative;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  width: 75%;
+  font-size: 200%;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  top: 40%;
+}
+
+.skillListContainer{
+  text-align: center;
+  padding-left: 15px;
+}
+
+.skillList{
+  width: 70%;
+  text-align: left;
+  
+  display: inline-block;
+}
+
+.skillList li{
+  text-align: left;
+  display: inline-block;
+  font-size: 200%;
+  margin-top: 20px;
+  margin-right: 20px;
+  border-style: solid;
+  border-radius: 10px;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  padding: 5px;
+}
+
+.skillList li:hover{
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  font-weight: 300;
+  text-shadow: 4px 4px 2px gray;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.FormalitiesAside{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 500%;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding-top: 40%;
+}
+
+.FormalitiesAside2{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 500%;
+  color: black;
+  display: inline-block;
+  position: relative;
+  padding-top: 35%;
+}
+
+.aboutMeText2{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+  color: black;
+  width: 75%;
+  font-size: 200%;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5px;
+}
+
+.aboutMeText3{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+  color: black;
+  width: 75%;
+  font-size: 200%;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 25px;
+  position: relative;
+  top: 10%;
+}
+
+
+.aboutMePicture{
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.projectHeader{
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  color: black;
+  text-align: center;
+  font-size: 300%;
+}
+
+.blogHeader{
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  color: black;
+  text-align: center;
+  font-size: 300%;
+}
+
+.contactHeader{
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  color: black;
+  font-size: 300%;
+  text-align: center;
+}
+
+.backButton{
+  position: fixed;
+  padding-top: 10px;
+  filter: invert(0%);
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.backButton:hover{
+transform: scale(1.2, 1.2);
+}
+
+@keyframes buttonClickTransition {
+  from{
+    font-size: 100%
+  }
+  to{
+    font-size: 125%
+  }
+}
+
+.code{
+  display: block;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding-left: 5vh;
+}
+
+.projectBox1{
+  display: inline-block;
+  position: relative;
+  width: 500px;
+  height: 550px;
+  padding: 20px;
+  background: linear-gradient(to bottom,  #2f4252 0%, #2f4252 75%,#E1E1E1 75%,#E1E1E1 100%);
+  animation: fadeIn 0.5s;
+  vertical-align: top;
+  margin-right: 5vh;
+  margin-bottom: 3vh;
+  text-align: center;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+}
+
+.projectBox1:hover{
+  box-shadow: 10px 10px 5px gray;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+}
+
+
+.projectBox4{
+  display: inline-block;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  padding: 20px;
+  background: linear-gradient(to bottom,  #B74C4C 0%,#B74C4C 75%,#9c9e9f 75%,#9c9e9f 100%);
+  animation: fadeIn 0.5s;
+  vertical-align: top;
+  /*
+  margin-right: 5vh;
+  */
+  margin-bottom: 3vh;  
+  text-align: center;
+}
+
+.LataraxAssistantLogo{
+  width: 200px;
+  height: 200px;
+  /*border-style: solid;*/
+  margin-top: 45px;
+}
+
+.IslamicQueryLogo{
+  width: 200px;
+  height: 200px;
+  position: relative;
+ /*border-style: solid;*/
+  margin-top: 45px;
+}
+
+.thetasktrakLogo{
+  width: 200px;
+  height: 200px;
+  filter: brightness(0%);
+  margin-top: 45px;
+}
+
+.WebsiteLogo{
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-top: 45px;
+}
+
+.projectTitles{
+  text-align: center;
+  color: white;
+  font-size: 300%;
+}
+
+.projectDescriptions{
+  text-align: left;
+  padding-top: 5px;
+  width: 85%;
+  position: absolute;
+  display: inline-block;
+  bottom: 4%;
+  left: 7%;
+  font-size: 110%;
+}
+
+.thetasktrak{
+}
+
+.video{
+  display: none;
+  animation: fadeIn 0.5s;
+  text-align: center;
+
+}
+
+iframe{
+  width: 400px;
+  height: 225px;
+}
+
+.videoBox{
+  display: inline-block;
+  width: 402px;
+  height: 225px;
+  background: gray;
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+  padding-bottom: 125px;
+  vertical-align: top;
+}
+
+.videoBox:hover{
+  box-shadow: 6px 6px 2px rgb(88, 88, 88);
+}
+
+.videoTitles{
+  display: block;
+  color: white;
+}
+
+.videoDescriptions{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 75%;
+  position: relative;
+  left: 10%; 
+}
+
+.videoBox:hover{
+  /*padding-bottom: 100px;*/
+  transition-duration: 0.15s;
+  transition-timing-function: ease-out;
+}
+
+/*
+.videoBox:hover .videoDescriptions{
+  display: block;
+}
+
+.videoBox:hover .videoTitles{
+  display: block;
+}
+*/
+
+
+.projectButtons{
+  display: block;
+  text-align: center;
+  margin: 2%;
+  font-size: 125%;
+}
+
+.codingButton{
+  margin-right: 20px;
+  background-color: Transparent;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 125%;
+  transition-duration: 0.25s;
+}
+
+.codingButton:hover{
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  font-size: 150%;
+  cursor: pointer;
+
+}
+
+.videographyButton{
+  margin-right: 20px;
+  background-color: Transparent;
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 125%;
+  transition-duration: 0.25s;
+}
+
+.videographyButton:hover{
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.photographyButton{
+  margin-right: 20px;
+  background-color: Transparent;
+  border: none;
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 125%;
+  transition-duration: 0.25s;
+}
+
+.photographyButton:hover{
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.photo{
+  display: none;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 15vh;
+}
+
+.GraphicDesign{
+  display: none;
+  animation: fadeIn 0.5s;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 15vh;
+}
+
+.graphicDesignButton{
+  text-align: right;
+  background-color: Transparent;
+  border: none;
+  color: black;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 125%;
+  transition-duration: 0.25s;
+}
+
+.graphicDesignButton:hover{
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  font-size: 150%;
+  cursor: pointer;
+}
+
+.ingenuityDraft{
+  width: 25%;
+  height: 25%;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  float: left;
+  margin-right: 20px;
+}
+
+.ingenuityDraft:hover{
+  transform:scale(1.1, 1.1);
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.ingenuityFinal{
+  width: 25%;
+  height: 25%;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  float: left;
+  margin-right: 20px;
+}
+
+.ingenuityFinal:hover{
+  transform:scale(1.1, 1.1);
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.YearbookCover{
+  width: 25%;
+  height: 25%;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  float: left;
+  margin-right: 20px;
+}
+
+.YearbookCover:hover{
+  transform:scale(1.1, 1.1);
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.LataraxImage{
+  width: 25%;
+  height: 25%;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  float: left;
+  margin-right: 20px;
+}
+
+.LataraxImage:hover{
+  transform:scale(1.1, 1.1);
+  transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+}
+
+.blogText{
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  font-size: 200%;
+  padding-top: 15vh;
+}
+
+.logos{
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.githubLogo{
+  filter: invert(100%);
+}
+
+.githubLogo:hover .overlay{
+  opacity: 1;
+}
+
+.gmailLogo{
+  margin-left: 50px;
+
+}
+
+.linkedinLogo{
+margin-left: 50px;
+}
+
+
+/* Modal Test */
+
+.modal {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    }
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        width: 24rem;
+        border-radius: 2px;
+    }
+    .close-button {
+        float: right;
+        width: 1.5rem;
+        line-height: 1.5rem;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        color: black;
+    }
+    .close-button:hover {
+    }
+    .show-modal {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1.0);
+        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+
+    .trigger{
+      background-color: Transparent;
+      border: none;
+      color: white;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 125%;
+      transition-duration: 0.25s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .trigger:hover{
+      transition-duration: 0.25s;
+      transition-timing-function: ease-out;
+      font-size: 150%;
+      cursor: pointer;
+    }
+
+    .LataraxAssistantImage{
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }

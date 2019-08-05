@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://use.typekit.net/sep7lyg.css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body onload="buttonHighlight()">
+    <header>
+      <a href="index.html">
+        <img class="backButton" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACsSURBVGhD7dIxCsJAFEXRCda6AnUrAV2Vna219lauJG7DPaRIan0/WAypBd8P98BjmOkuTAGWr/meqR21XjtPt6QiYtTe2ikeMqojrlrK71VH3DQi/mUREQeNCAdEuCDCBREuiHBBhAsiXKy1QYuIu5YyIqy0TouQl7bX0tpoT40YN8S4IsYVMa7mMTstLWJcEeOKGFfEuJrHbLW06phHPGQWMRetnW4AfqyUDx/ucad4uVg9AAAAAElFTkSuQmCC">
+      </a>
+      <h1 class="projectHeader">Projects</h1>
+      <div class="projectButtons">
+        <button class="codingButton" onclick="showHideElements('code', 'video', 'photo', 'GraphicDesign')">Coding</button>
+        <button class="videographyButton" onclick="showHideElements('video', 'code', 'photo', 'GraphicDesign')">Videography</button>
+        <button class="photographyButton" onclick="showHideElements('photo', 'code', 'video', 'GraphicDesign')">Photography</button>
+        <button class="graphicDesignButton" onclick="showHideElements('GraphicDesign', 'code', 'video', 'photo')">Graphic Design</button>
+    </div>
+    </header>
+    <div class="code">
+      <div class="projectBox1">
+        <h2 class="projectTitles">Latarax Assistant</h2>
+        <img class="LataraxAssistantLogo" src="images/mic.png">
+        <div class="projectDescriptions">
+          A Python based voice assistant that recognizes speech and executes commands accordingly. Local commands are available, such as opening launching apps like Spotify Google Chrome, as well as Wolfram Alpha queries for inputs that aren't recognized locally. To top it all off, at your service is a certain  sith lord that asks for your commands.
+        </div>
+      </div>
+      <div class="projectBox1">
+        <h2 class="projectTitles">IslamicQuery</h2>
+        <img class="IslamicQueryLogo" src="images/searchIcon.png">
+        <div class="projectDescriptions">
+            A web app that enables user to search questions pertaining to the religion of Islam. I used Python for the backend as well as for the primary functionality. It's based on a custom search engine which utilizes an inverted index to query a SQL database of authenticated information for responses based on user inputted keyword(s).
+        </div>
+      </div>
+      <div class="projectBox1">
+          <h2 class="projectTitles">thetasktrak</h2>
+          <img class="thetasktrakLogo" src="images/graph.png">
+          <div class="projectDescriptions">
+              A web app that allows users to track personal goals and their progress. Implemented Flask for the back end, NGINX for web server, HTML, CSS, and JavaScript for the front end, and a SQL database for manipulating user data. Developed reminder system along with graphs to show success rate over time.
+          </div>
+      </div>
+      <div class="projectBox1">
+          <h2 class="projectTitles">This Website!</h2>
+          <img class="WebsiteLogo" src="images/internet.png">
+          <div class="projectDescriptions">
+            Personal websites aren't generally considered major projects per say, but every responsive design, every button click animation, every button being highlighted was a fruit of labor from yours truly. More of the focus was put on having a beautiful front end design, so HTML, CSS, and JavaScript are plenty on here.
+          </div>
+      </div>
+    </div>
+    <div class="video">
+      <div class="videoBox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/q5WEvNdAfw4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        <h2 class="videoTitles">Layover</h2>
+        <div class="videoDescriptions">Video I shot and edited for the Layover event, hosted by the Musafir Clothing Company.</div>
+      </div>
+      <div class="videoBox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/IJaMKLIi9ik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        <h2 class="videoTitles">The Dreams We Share</h2>
+        <div class="videoDescriptions">Short film I helped shoot for USF's Campus Movie Fest. Really proud of the visuals we were able to produce and the story we were able to tell.</div>
+      </div>
+      
+      <div class="videoBox">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/V7EPMkSqAn8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2 class="videoTitles">MIST Florida 2018</h2>
+        <div class="videoDescriptions">
+          Video that I shot and edited for the annual MIST tournament. Had to shoot all weekend while also finding time to edit to show the final product on Sunday. To say I was dead inside would be an understatement.
+        </div>
+      </div>
+      
+      <div class="videoBox">
+        <iframe width="560" height="315"src="https://www.youtube.com/embed/LbLg9Y6RIT0" frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope;picture-in-picture" allowfullscreen>
+        </iframe>
+        <h2 class="videoTitles">spam</h2>
+        <div class="videoDescriptions">Short film I helped shoot that won Best Drama at USF's Campus Movie Fest.</div>
+      </div>
+
+      <div class="videoBox">  
+        <iframe width="560" height="315"src="https://www.youtube.com/embed/YCoGTG1g2yA" frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope;picture-in-picture" allowfullscreen>
+        </iframe>
+        <h2 class="videoTitles">nAPLES</h2>
+        <div class="videoDescriptions">Travel video I pieced together from a vacation to Naples, Florida. Yes, Naples, Italy would've been ideal, but I work with what I have.</div>
+        </div>
+      <div class="videoBox">
+        <iframe width="560" height="315"src="https://www.youtube.com/embed/TK9AiLz-E00" frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope;picture-in-picture" allowfullscreen></iframe>
+        <h2 class="videoTitles">Layover Alternate</h2>
+        <div class="videoDescriptions">Alternate cut of the Video I shot and edited for the Layover event.</div>
+      </div>
+      <div class="videoBox">
+        <iframe width="560" height="315"src="https://www.youtube.com/embed/uT-4CxaU62w" frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope;picture-in-picture" allowfullscreen>
+        </iframe>
+        <h2 class="videoTitles">MIST Florida 2017</h2>
+        <div class="videoDescriptions">Video that I edited remotely overnight for an event hosted by MIST. Had to be ready the next day at 3 PM. It was quite taxing on my nervous system.</div>
+      </div>
+      
+      <div class="videoBox">
+        <iframe width="560" height="315"src="https://www.youtube.com/embed/AD6APHD7Rwc" frameborder="0"allow="accelerometer; autoplay; encrypted-media; gyroscope;picture-in-picture" allowfullscreen></iframe>
+        <h2 class="videoTitles">oRLANDO</h2>
+        <div class="videoDescriptions">Travel video I pieced together from a trip to Orlando, Florida. Our family travels in hoards.</div>
+      </div>
+    </div>
+    <div class="photo">
+      <div>Coming up with an efficient way to display images...</div>
+    </div>
+
+    <div class="GraphicDesign">
+      <!--<img class="ingenuityDraft" src="images/ingenuity45g4.png">
+      <img class ="ingenuityFinal" src="images/ingenuity.png">
+      <img class="YearbookCover" src="images/yearbookcoverupdated.png">
+      <img class="LataraxImage" src="images/23fin.png">-->
+      <div>Coming up with an efficient way to display images...</div>
+    </div>
+    <script src="js/myScript.js">
+    </script>
+  </body>
+
+
+
+
+</html>
