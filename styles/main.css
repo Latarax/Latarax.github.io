@@ -52,6 +52,7 @@ body{
   /*background: white;*/
   animation: fadeIn 1s;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body.fade-out{
@@ -69,7 +70,7 @@ body.fade-out{
   width: 100%;
   text-align: center;
   margin: 0;
-  top: 40%;
+  top: 25%;
 }
 
 nav ul{
@@ -77,21 +78,23 @@ nav ul{
   margin: 0 auto;
   margin-top: 1vh;
   font-size: 3.2vh;
-  width: 72vw;
-  padding-top: 20px;
+  width: 100%;
 }
 
 nav ul li{
+  position: relative;
   display: inline-block;
   list-style-type: none;
-  padding: 2vh;
-  transition-property: font-size;
+  margin: 2vh;
+  transition-property: bottom;
   transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  bottom: 0;
 }
 
+
 nav ul li:hover{
-  font-size: 115%;
-  transition-timing-function: ease-out;
+  bottom: 5px;
 }
 
 nav ul li a{
@@ -105,36 +108,34 @@ nav ul li a{
   position: relative;
   font-weight: 400;
   font-style: normal;
-  font-size: 5.5vh;
+  font-size: 6.5vh;
   letter-spacing: 20px;
-  margin-left: 20px;
-  padding: 0;
   color: black;
   display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ECC7C0;
+  margin-top: 5%;
 }
 
 .aboutMeBody{
   width: 100%;
 }
 
-
 .testboxContainer{
-  /*display: flex;
-  justify-content: center;*/ 
+  display: block;
   text-align: center;
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
-  padding-left: 20px;
+  padding-left: 5vh;
 }
 
 .testbox{
   background-color: #DAE9E4;
   width: 500px;
   height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
   margin-top: 2vh;
   margin-right: 20px;
   margin-bottom: 4vh;
@@ -142,183 +143,105 @@ nav ul li a{
   vertical-align: top;
   display: inline-block;
   box-shadow: 4px 4px 2px gray;
-  /*float: left;*/
 }
 
-.testbox2{
+.testbox:nth-child(1){
+  background-color: #DAE9E4;
+}
+
+.testbox:nth-child(2){
   background-color:#ECC7C0;
-  width: 500px;
-  height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
-  margin-top: 2vh;
-  margin-right: 20px;
-  margin-bottom: 4vh;
-  vertical-align: top;
-  text-align: center;
-  display: inline-block;
-  box-shadow: 4px 4px 2px gray;
-  /*float: left;*/
 }
 
-.testboximage{
-  display: inline-block;
-  width: 100%;
-  height: auto;
-}
-
-.testbox3{
+.testbox:nth-child(3){
   background-color: #FFE1BB;
-  width: 500px;
-  height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
-  margin-top: 2vh;
-  margin-right: 20px;
-  margin-bottom: 4vh;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 4px 4px 10px gray;
-  /*float: left;*/
 }
 
-.testbox4{
+.testbox:nth-child(4){
   background-color: #e2e5ce;
-  width: 500px;
-  height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  margin-right: 20px;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 4px 4px 2px gray;
-  /*float: left;*/
 }
 
-.testbox5{
+.testbox:nth-child(5){
   background-color: #DAFFD8;
-  width: 500px;
-  height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  margin-right: 20px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 4px 4px 10px gray;
-  /*float: left;*/
 }
 
-.testbox6{
+.testbox:nth-child(6){
   background-color: #D8FFFD;
-  width: 500px;
-  height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
-  margin-top: 2vh;
-  margin-right: 20px;
-  margin-bottom: 4vh;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 4px 4px 10px gray;
-  /*float: left;*/
 }
 
-.testbox7{
+.testbox:nth-child(7){
   background-color: #FFD8D8;
-  width: 500px;
-  height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  margin-right: 20px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 4px 4px 2px gray;
-  /*float: left;*/
 }
 
-.testbox8{
+.testbox:nth-child(8){
   background-color: #DBE5FC;
-  width: 500px;
-  height: 500px;
-  /*
-  margin-left: 2vh;
-  margin-right: 3vh;
-  */
-  margin-top: 2vh;
-  margin-bottom: 4vh;
-  margin-right: 20px;
-  text-align: center;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 4px 4px 2px gray;
-  /*float: left;*/
 }
+
 
 .aboutMeHeader{
-
+  position: relative;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 5px;
   color: black;
   text-align: center;
   font-size: 400%;
+  width: 25%;
+  display: block;
+  left: 50%;
+  margin-left: -12.5%;
+  top: 1%;
 }
 
-.MyNameIs{
+.schoolText{
+  position: relative;
   font-weight: 400;
   font-style: normal;
-  font-size: 600%;
   color: black;
-  padding: 10px;
-  padding-top: 29%;
+  width: 100%;
+  font-size: 500%;
   text-align: center;
-  display: block;
+  margin: 0 auto;
+  margin-top: 30%;
 }
 
 .aboutMeText{
-  /*font-weight: 400;
-  color: black;
-  width: 60%;
-  font-size: 35px;
-  display: block;
-  text-align: center;
-  padding-top: 5vh;
-  */
   position: relative;
+  margin-top: 50px;
   font-weight: 400;
   font-style: normal;
   color: black;
   width: 75%;
   font-size: 200%;
-  display: block;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  height: auto;
-  top: 40%;
+  margin: 0 auto;
+  margin-top: 33%;
 }
+
+.courseworkContainer{
+
+}
+
+.courseworkTitle{
+  font-size: 250%;
+  text-align: left;
+  padding-bottom: 7px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.courseworkList{
+  text-align: left;
+  width: 75%;
+  margin-left: 10%;
+  margin-top: 20%;
+  font-size: 175%;
+  float: left;
+  list-style-type: circle;
+}
+
+
 
 .skillListContainer{
   text-align: center;
@@ -328,7 +251,6 @@ nav ul li a{
 .skillList{
   width: 70%;
   text-align: left;
-  
   display: inline-block;
 }
 
@@ -380,31 +302,40 @@ nav ul li a{
 .aboutMeText2{
   font-weight: 400;
   font-style: normal;
-  font-size: 150%;
   color: black;
-  width: 75%;
-  font-size: 200%;
+  font-size: 500%;
   display: block;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
   padding-top: 5px;
+  margin-top: 33%;
+  width: 69%;
 }
 
 .aboutMeText3{
   font-weight: 400;
   font-style: normal;
-  font-size: 150%;
   color: black;
-  width: 75%;
-  font-size: 200%;
+  font-size: 500%;
   display: block;
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 25px;
+  padding-top: 5px;
+  margin-top: 30%;
+}
+
+.aboutMeText4{
   position: relative;
-  top: 10%;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  width: 90%;
+  font-size: 200%;
+  margin: 0 auto;
+  margin-top: 15%; 
+  text-align: center;
 }
 
 
@@ -425,7 +356,7 @@ nav ul li a{
   letter-spacing: 5px;
   color: black;
   text-align: center;
-  font-size: 300%;
+  font-size: 400%;
 }
 
 .blogHeader{
@@ -452,6 +383,7 @@ nav ul li a{
   filter: invert(0%);
   transition-duration: 0.25s;
   transition-timing-function: ease-out;
+  display: inline-block;
 }
 
 .backButton:hover{
@@ -481,7 +413,7 @@ transform: scale(1.2, 1.2);
   width: 500px;
   height: 550px;
   padding: 20px;
-  background: linear-gradient(to bottom,  #2f4252 0%, #2f4252 75%,#E1E1E1 75%,#E1E1E1 100%);
+  background: linear-gradient(to bottom,  #DAE9E4 0%, #DAE9E4 75%,#E1E1E1 75%,#E1E1E1 100%);
   animation: fadeIn 0.5s;
   vertical-align: top;
   margin-right: 5vh;
@@ -489,6 +421,18 @@ transform: scale(1.2, 1.2);
   text-align: center;
   transition-duration: 0.1s;
   transition-timing-function: ease-out;
+}
+
+.projectBox1:nth-child(2){
+  background: linear-gradient(to bottom,  #ECC7C0 0%, #ECC7C0 75%,#E1E1E1 75%,#E1E1E1 100%);
+}
+
+.projectBox1:nth-child(3){
+  background: linear-gradient(to bottom,  #FFE1BB 0%, #FFE1BB 75%,#E1E1E1 75%,#E1E1E1 100%);
+}
+
+.projectBox1:nth-child(4){
+  background: linear-gradient(to bottom,  #e2e5ce 0%, #e2e5ce 75%,#E1E1E1 75%,#E1E1E1 100%);
 }
 
 .projectBox1:hover{
@@ -519,10 +463,11 @@ transform: scale(1.2, 1.2);
   height: 200px;
   /*border-style: solid;*/
   margin-top: 45px;
+  filter: brightness(0%);
 }
 
 .IslamicQueryLogo{
-  width: 200px;
+  width: 250px;
   height: 200px;
   position: relative;
  /*border-style: solid;*/
@@ -545,7 +490,7 @@ transform: scale(1.2, 1.2);
 
 .projectTitles{
   text-align: center;
-  color: white;
+  color: black;
   font-size: 300%;
 }
 
@@ -579,7 +524,7 @@ iframe{
   display: inline-block;
   width: 402px;
   height: 225px;
-  background: gray;
+  background: white;
   margin-right: 50px;
   margin-left: 50px;
   margin-bottom: 20px;
@@ -595,12 +540,12 @@ iframe{
 
 .videoTitles{
   display: block;
-  color: white;
+  color: black;
 }
 
 .videoDescriptions{
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 10px;
   width: 75%;
@@ -633,25 +578,28 @@ iframe{
 }
 
 .codingButton{
+  position: relative;
   margin-right: 20px;
   background-color: Transparent;
   border: none;
+  outline: none;
   color: black;
   font-weight: bold;
   font-style: normal;
   font-size: 125%;
+  transition-property: bottom;
   transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  bottom: 0;
 }
 
 .codingButton:hover{
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  font-size: 150%;
+  bottom: 5px;
   cursor: pointer;
-
 }
 
 .videographyButton{
+  position: relative;
   margin-right: 20px;
   background-color: Transparent;
   border: none;
@@ -660,31 +608,35 @@ iframe{
   font-weight: normal;
   font-style: normal;
   font-size: 125%;
+  transition-property: bottom;
   transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  bottom: 0;
 }
 
 .videographyButton:hover{
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  font-size: 150%;
+  bottom: 5px;
   cursor: pointer;
 }
 
 .photographyButton{
+  position: relative;
   margin-right: 20px;
   background-color: Transparent;
   border: none;
+  outline: none;
   color: black;
   font-weight: normal;
   font-style: normal;
   font-size: 125%;
+  transition-property: bottom;
   transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  bottom: 0;
 }
 
 .photographyButton:hover{
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  font-size: 150%;
+  bottom: 5px;
   cursor: pointer;
 }
 
@@ -704,20 +656,23 @@ iframe{
 }
 
 .graphicDesignButton{
+  position: relative;
   text-align: right;
   background-color: Transparent;
   border: none;
+  outline: none;
   color: black;
   font-weight: normal;
   font-style: normal;
   font-size: 125%;
+  transition-property: bottom;
   transition-duration: 0.25s;
+  transition-timing-function: ease-out;
+  bottom: 0;
 }
 
 .graphicDesignButton:hover{
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  font-size: 150%;
+  bottom: 5px;
   cursor: pointer;
 }
 
