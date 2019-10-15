@@ -1,6 +1,6 @@
 # Latarax.github.io
 
-My personal website, hosted by Github Pages. Very much a work in progress.
+My personal website, hosted by Github Pages.
 
 # What I Learned
 
