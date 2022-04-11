@@ -4,39 +4,6 @@
   font-family: mr-eaves-modern, sans-serif;
 }
 
-@media screen and (max-width: 480px) {
-    body nav ul{
-      font-size: 15px;
-    }
-
-    body .talhaKhanHeader{
-      font-size: 20px;
-    }
-
-    body .testboxContainer{
-      padding: 0;
-      width: 100%;
-    }
-
-    body .testbox{
-      margin-right: 0;
-    }
-}
-
-/*
-@media screen and (max-width: 480px)
-{
-  vertical-align: top;
-  margin: 0;
-}
-*/
-
-.backgroundTest{
-  background-image: url(images/yearbookcoverupdated.png);
-
-}
-
-
 @keyframes fadeIn {
   from{
     opacity: 0;
@@ -49,7 +16,6 @@
 }
 
 body{
-  /*background: white;*/
   animation: fadeIn 1s;
   margin: 0;
   overflow-x: hidden;
@@ -66,324 +32,60 @@ body.fade-out{
 }
 
 .homeContainer{
-  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 100%;
   text-align: center;
   margin: 0;
-  top: 25%;
-}
-
-nav ul{
-  position: relative;
-  margin: 0 auto;
-  margin-top: 1vh;
-  font-size: 3.2vh;
-  width: 100%;
-}
-
-nav ul li{
-  position: relative;
-  display: inline-block;
-  list-style-type: none;
-  margin: 2vh;
-  transition-property: bottom;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  bottom: 0;
-}
-
-
-nav ul li:hover{
-  bottom: 5px;
-}
-
-nav ul li a{
-  color: black;
-  text-decoration: none;
+  margin-top: 100px;
 }
 
 /* Headers*/
 
 .talhaKhanHeader{
-  position: relative;
   font-weight: 400;
   font-style: normal;
-  font-size: 6.5vh;
+  font-size: 5em;
   letter-spacing: 20px;
   color: black;
-  display: inline-block;
   width: 100%;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #ECC7C0;
-  margin-top: 5%;
 }
 
-.aboutMeBody{
-  width: 100%;
-}
-
-.testboxContainer{
-  display: block;
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
-  padding-left: 5vh;
-}
-
-.testbox{
-  background-color: #DAE9E4;
-  width: 500px;
-  height: 500px;
-  margin-top: 2vh;
-  margin-right: 20px;
-  margin-bottom: 4vh;
-  text-align: center;
-  vertical-align: top;
-  display: inline-block;
-  box-shadow: 4px 4px 2px gray;
-}
-
-.testbox:nth-child(1){
-  background-color: #DAE9E4;
-}
-
-.testbox:nth-child(2){
-  background-color:#ECC7C0;
-}
-
-.testbox:nth-child(3){
-  background-color: #FFE1BB;
-}
-
-.testbox:nth-child(4){
-  background-color: #e2e5ce;
-}
-
-.testbox:nth-child(5){
-  background-color: #DAFFD8;
-}
-
-.testbox:nth-child(6){
-  background-color: #D8FFFD;
-}
-
-.testbox:nth-child(7){
-  background-color: #FFD8D8;
-}
-
-.testbox:nth-child(8){
-  background-color: #DBE5FC;
-}
-
-
-.aboutMeHeader{
-  position: relative;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 5px;
-  color: black;
-  text-align: center;
-  font-size: 400%;
-  width: 25%;
-  display: block;
-  left: 50%;
-  margin-left: -12.5%;
-  top: 1%;
-}
-
-.schoolText{
-  position: relative;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  width: 100%;
-  font-size: 500%;
-  text-align: center;
-  margin: 0 auto;
-  margin-top: 30%;
-}
-
-.aboutMeText{
-  position: relative;
-  margin-top: 50px;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
+.tagline {
+  font-size: 2em;
   width: 75%;
-  font-size: 200%;
-  margin: 0 auto;
-  margin-top: 33%;
+  text-align: center;
+  font-weight: 200;
+  margin-bottom: 50px;
 }
 
-.courseworkContainer{
-
-}
-
-.courseworkTitle{
-  font-size: 250%;
-  text-align: left;
-  padding-bottom: 7px;
-  font-weight: 600;
+.logos {
   width: 100%;
-  margin-top: 5%;
-  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
 }
 
-.courseworkList{
-  text-align: left;
-  width: 75%;
-  margin-left: 10%;
-  margin-top: 20%;
-  font-size: 175%;
-  float: left;
-  list-style-type: circle;
+.githubLogo{
+  filter: invert(100%);
+  width: 50%;
+  height: auto;
+  margin-right: 30px;
+
 }
 
-
-
-.skillListContainer{
-  text-align: center;
-  padding-left: 15px;
-}
-
-.skillList{
+.gmailLogo {
   width: 70%;
-  text-align: left;
-  display: inline-block;
+  height: auto;
 }
 
-.skillList li{
-  text-align: left;
-  display: inline-block;
-  font-size: 200%;
-  margin-top: 20px;
-  margin-right: 20px;
-  border-style: solid;
-  border-radius: 10px;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  padding: 5px;
-}
-
-.skillList li:hover{
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  font-weight: 300;
-  text-shadow: 4px 4px 2px gray;
-  border-style: solid;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-  border-color: black;
-}
-
-.FormalitiesAside{
-  font-weight: 400;
-  font-style: normal;
-  font-size: 500%;
-  color: black;
-  display: inline-block;
-  position: relative;
-  padding-top: 40%;
-}
-
-.FormalitiesAside2{
-  font-weight: 400;
-  font-style: normal;
-  font-size: 500%;
-  color: black;
-  display: inline-block;
-  position: relative;
-  padding-top: 35%;
-}
-
-.aboutMeText2{
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  font-size: 500%;
-  display: block;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 5px;
-  margin-top: 33%;
-  width: 69%;
-}
-
-.aboutMeText3{
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  font-size: 500%;
-  display: block;
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 5px;
-  margin-top: 30%;
-}
-
-.aboutMeText4{
-  position: relative;
-  font-weight: 400;
-  font-style: normal;
-  color: black;
-  width: 90%;
-  font-size: 200%;
-  margin: 0 auto;
-  margin-top: 15%; 
-  text-align: center;
-}
-
-
-.aboutMePicture{
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.projectHeader{
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 5px;
-  color: black;
-  text-align: center;
-  font-size: 400%;
-}
-
-.blogHeader{
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 5px;
-  color: black;
-  text-align: center;
-  font-size: 300%;
-}
-
-.contactHeader{
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 5px;
-  color: black;
-  font-size: 300%;
-  text-align: center;
-}
-
-.backButton{
-  position: fixed;
-  padding-top: 10px;
-  filter: invert(0%);
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  display: inline-block;
+.linkedinLogo {
+  width: 50%;
+  height: auto;
+  margin-left: 30px;
 }
 
 .backButton:hover{
@@ -399,438 +101,24 @@ transform: scale(1.2, 1.2);
   }
 }
 
-.code{
-  display: block;
-  text-align: center;
-  width: 70%;
-  margin: 0 auto;
-  padding-left: 5vh;
+@media all and (max-width: 768px) {
+  .talhaKhanHeader{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    letter-spacing: 20px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 5%;
+  }
+  
+  .tagline {
+    font-size: 1.5em;
+    width: 85%;
+    text-align: center;
+    font-weight: 200;
+  }
 }
-
-.projectBox1{
-  display: inline-block;
-  position: relative;
-  width: 500px;
-  height: 550px;
-  padding: 20px;
-  background: linear-gradient(to bottom,  #DAE9E4 0%, #DAE9E4 75%,#E1E1E1 75%,#E1E1E1 100%);
-  animation: fadeIn 0.5s;
-  vertical-align: top;
-  margin-right: 5vh;
-  margin-bottom: 3vh;
-  text-align: center;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-out;
-}
-
-.projectBox1:nth-child(2){
-  background: linear-gradient(to bottom,  #ECC7C0 0%, #ECC7C0 75%,#E1E1E1 75%,#E1E1E1 100%);
-}
-
-.projectBox1:nth-child(3){
-  background: linear-gradient(to bottom,  #FFE1BB 0%, #FFE1BB 75%,#E1E1E1 75%,#E1E1E1 100%);
-}
-
-.projectBox1:nth-child(4){
-  background: linear-gradient(to bottom,  #e2e5ce 0%, #e2e5ce 75%,#E1E1E1 75%,#E1E1E1 100%);
-}
-
-.projectBox1:hover{
-  box-shadow: 10px 10px 5px gray;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-out;
-}
-
-
-.projectBox4{
-  display: inline-block;
-  position: relative;
-  width: 500px;
-  height: 500px;
-  padding: 20px;
-  background: linear-gradient(to bottom,  #B74C4C 0%,#B74C4C 75%,#9c9e9f 75%,#9c9e9f 100%);
-  animation: fadeIn 0.5s;
-  vertical-align: top;
-  /*
-  margin-right: 5vh;
-  */
-  margin-bottom: 3vh;  
-  text-align: center;
-}
-
-.LataraxAssistantLogo{
-  width: 200px;
-  height: 200px;
-  /*border-style: solid;*/
-  margin-top: 45px;
-  filter: brightness(0%);
-}
-
-.IslamicQueryLogo{
-  width: 250px;
-  height: 200px;
-  position: relative;
- /*border-style: solid;*/
-  margin-top: 45px;
-}
-
-.thetasktrakLogo{
-  width: 200px;
-  height: 200px;
-  filter: brightness(0%);
-  margin-top: 45px;
-}
-
-.WebsiteLogo{
-  width: 200px;
-  height: 200px;
-  position: relative;
-  margin-top: 45px;
-}
-
-.projectTitles{
-  text-align: center;
-  color: black;
-  font-size: 300%;
-}
-
-.projectDescriptions{
-  text-align: left;
-  padding-top: 5px;
-  width: 85%;
-  position: absolute;
-  display: inline-block;
-  bottom: 4%;
-  left: 7%;
-  font-size: 110%;
-}
-
-.thetasktrak{
-}
-
-.video{
-  display: none;
-  animation: fadeIn 0.5s;
-  text-align: center;
-
-}
-
-iframe{
-  width: 400px;
-  height: 225px;
-}
-
-.videoBox{
-  display: inline-block;
-  width: 402px;
-  height: 225px;
-  background: white;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 20px;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
-  padding-bottom: 125px;
-  vertical-align: top;
-}
-
-.videoBox:hover{
-  box-shadow: 6px 6px 2px rgb(88, 88, 88);
-}
-
-.videoTitles{
-  display: block;
-  color: black;
-}
-
-.videoDescriptions{
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  width: 75%;
-  position: relative;
-  left: 10%; 
-}
-
-.videoBox:hover{
-  /*padding-bottom: 100px;*/
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
-}
-
-/*
-.videoBox:hover .videoDescriptions{
-  display: block;
-}
-
-.videoBox:hover .videoTitles{
-  display: block;
-}
-*/
-
-
-.projectButtons{
-  display: block;
-  text-align: center;
-  margin: 2%;
-  font-size: 125%;
-}
-
-.codingButton{
-  position: relative;
-  margin-right: 20px;
-  background-color: Transparent;
-  border: none;
-  outline: none;
-  color: black;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 125%;
-  transition-property: bottom;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  bottom: 0;
-}
-
-.codingButton:hover{
-  bottom: 5px;
-  cursor: pointer;
-}
-
-.videographyButton{
-  position: relative;
-  margin-right: 20px;
-  background-color: Transparent;
-  border: none;
-  outline: none;
-  color: black;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 125%;
-  transition-property: bottom;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  bottom: 0;
-}
-
-.videographyButton:hover{
-  bottom: 5px;
-  cursor: pointer;
-}
-
-.photographyButton{
-  position: relative;
-  margin-right: 20px;
-  background-color: Transparent;
-  border: none;
-  outline: none;
-  color: black;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 125%;
-  transition-property: bottom;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  bottom: 0;
-}
-
-.photographyButton:hover{
-  bottom: 5px;
-  cursor: pointer;
-}
-
-.photo{
-  display: none;
-  text-align: center;
-  font-size: 200%;
-  padding-top: 15vh;
-}
-
-.GraphicDesign{
-  display: none;
-  animation: fadeIn 0.5s;
-  text-align: center;
-  font-size: 200%;
-  padding-top: 15vh;
-}
-
-.graphicDesignButton{
-  position: relative;
-  text-align: right;
-  background-color: Transparent;
-  border: none;
-  outline: none;
-  color: black;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 125%;
-  transition-property: bottom;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  bottom: 0;
-}
-
-.graphicDesignButton:hover{
-  bottom: 5px;
-  cursor: pointer;
-}
-
-.ingenuityDraft{
-  width: 25%;
-  height: 25%;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  float: left;
-  margin-right: 20px;
-}
-
-.ingenuityDraft:hover{
-  transform:scale(1.1, 1.1);
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-}
-
-.ingenuityFinal{
-  width: 25%;
-  height: 25%;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  float: left;
-  margin-right: 20px;
-}
-
-.ingenuityFinal:hover{
-  transform:scale(1.1, 1.1);
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-}
-
-.YearbookCover{
-  width: 25%;
-  height: 25%;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  float: left;
-  margin-right: 20px;
-}
-
-.YearbookCover:hover{
-  transform:scale(1.1, 1.1);
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-}
-
-.LataraxImage{
-  width: 25%;
-  height: 25%;
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-  float: left;
-  margin-right: 20px;
-}
-
-.LataraxImage:hover{
-  transform:scale(1.1, 1.1);
-  transition-duration: 0.25s;
-  transition-timing-function: ease-out;
-}
-
-.blogText{
-  font-weight: normal;
-  font-style: normal;
-  text-align: center;
-  font-size: 200%;
-  padding-top: 15vh;
-}
-
-.logos{
-  text-align: center;
-  margin-top: 20vh;
-}
-
-.githubLogo{
-  filter: invert(100%);
-}
-
-.githubLogo:hover .overlay{
-  opacity: 1;
-}
-
-.gmailLogo{
-  margin-left: 50px;
-
-}
-
-.linkedinLogo{
-margin-left: 50px;
-}
-
-
-/* Modal Test */
-
-.modal {
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(1.1);
-        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    }
-    .modal-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        width: 24rem;
-        border-radius: 2px;
-    }
-    .close-button {
-        float: right;
-        width: 1.5rem;
-        line-height: 1.5rem;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 0.25rem;
-        color: black;
-    }
-    .close-button:hover {
-    }
-    .show-modal {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1.0);
-        transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-    }
-
-    .trigger{
-      background-color: Transparent;
-      border: none;
-      color: white;
-      font-weight: normal;
-      font-style: normal;
-      font-size: 125%;
-      transition-duration: 0.25s;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .trigger:hover{
-      transition-duration: 0.25s;
-      transition-timing-function: ease-out;
-      font-size: 150%;
-      cursor: pointer;
-    }
-
-    .LataraxAssistantImage{
-      width: 100%;
-      height: auto;
-      border-radius: 15px;
-    }
